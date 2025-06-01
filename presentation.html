@@ -2,35 +2,52 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>일정 이미지 링크 예제</title>
+  <title>여행 일정</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       text-align: center;
-      margin-top: 50px;
+      font-family: sans-serif;
     }
-    img {
+    .image-wrapper {
+      position: relative;
+      display: inline-block;
       max-width: 90%;
+    }
+    .image-wrapper img {
+      width: 100%;
       height: auto;
+    }
+    .click-area {
+      position: absolute;
+      cursor: pointer;
+      z-index: 10;
+    }
+    /* 1일차 링크 영역 (비율 기준) */
+    .day1 {
+      top: 11.5%;
+      left: 10%;
+      width: 20%;
+      height: 3%;
+    }
+    /* 2일차 링크 영역 */
+    .day2 {
+      top: 78%;
+      left: 10%;
+      width: 20%;
+      height: 3%;
     }
   </style>
 </head>
 <body>
 
-  <h1>여행 일정</h1>
-  <p>이미지 내에서 <strong>"1일차"</strong> 또는 <strong>"2일차"</strong>를 클릭해 보세요.</p>
+  <h2>일정 이미지 클릭 예제</h2>
+  <p>아래 이미지의 <strong>"1일차", "2일차"</strong>를 탭하세요</p>
 
-  <!-- 이미지와 맵 연결 -->
-  <img src="Screenshot_20250601_154749_Samsung%20Notes.jpg" usemap="#schedulemap" alt="여행 일정 이미지">
-
-  <!-- 이미지 맵 정의 -->
-  <map name="schedulemap">
-    <!-- 1일차 텍스트 위치 대략 (좌상단 x=80, y=150), (우하단 x=200, y=190) -->
-    <area shape="rect" coords="80,150,200,190" href="https://www.naver.com" alt="1일차로 이동" target="_blank">
-
-    <!-- 2일차 텍스트 위치 대략 (좌상단 x=80, y=1020), (우하단 x=200, y=1060) -->
-    <area shape="rect" coords="80,1020,200,1060" href="https://www.naver.com" alt="2일차로 이동" target="_blank">
-  </map>
+  <div class="image-wrapper">
+    <img src="Screenshot_20250601_154749_Samsung%20Notes.jpg" alt="일정 이미지">
+    <a class="click-area day1" href="https://www.naver.com" target="_blank" title="1일차로 이동"></a>
+    <a class="click-area day2" href="https://www.naver.com" target="_blank" title="2일차로 이동"></a>
+  </div>
 
 </body>
 </html>
