@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>일정 이미지 링크 예제</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    img {
+      max-width: 90%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>여행 일정</h1>
+  <p>이미지 내에서 <strong>"1일차"</strong> 또는 <strong>"2일차"</strong>를 클릭해 보세요.</p>
+
+  <!-- 이미지와 맵 연결 -->
+  <img src="Screenshot_20250601_154749_Samsung%20Notes.jpg" usemap="#schedulemap" alt="여행 일정 이미지">
+
+  <!-- 이미지 맵 정의 -->
+  <map name="schedulemap">
+    <!-- 1일차 텍스트 위치 대략 (좌상단 x=80, y=150), (우하단 x=200, y=190) -->
+    <area shape="rect" coords="80,150,200,190" href="https://www.naver.com" alt="1일차로 이동" target="_blank">
+
+    <!-- 2일차 텍스트 위치 대략 (좌상단 x=80, y=1020), (우하단 x=200, y=1060) -->
+    <area shape="rect" coords="80,1020,200,1060" href="https://www.naver.com" alt="2일차로 이동" target="_blank">
+  </map>
+
+</body>
+</html>
