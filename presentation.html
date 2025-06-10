@@ -20,6 +20,8 @@
             justify-content: center;
             background-size: cover;
             background-position: center;
+            background-repeat: no-repeat; /* Ensure background does not repeat */
+            background-attachment: fixed; /* Fix background relative to viewport */
             text-align: center;
             color: white; /* Default text color for slides with background images */
             padding: 20px;
@@ -83,8 +85,6 @@
 
         #section-1 {
             background-image: url('image_introduction.jpg');
-            background-size: cover;
-            background-position: center;
         }
         #section-1 h2, #section-1 ul {
             background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
@@ -93,10 +93,8 @@
         }
 
         #section-2 {
-            /* Assuming image_4.png is available in the same directory */
-            background-image: url('image_4.jpg'); /* Using image_3.jpg as a placeholder */
-            background-size: cover;
-            background-position: center;
+            /* ENSURE 'image_3.jpg' IS IN THE SAME DIRECTORY OR PROVIDE CORRECT PATH */
+            background-image: url('image_4.jpg');
         }
         #section-2 h2, #section-2 p {
             background-color: rgba(0, 0, 0, 0.5);
@@ -105,9 +103,8 @@
         }
 
         #section-3 {
+            /* ENSURE 'image_7.jpg' IS IN THE SAME DIRECTORY OR PROVIDE CORRECT PATH */
             background-image: url('image_7.jpg');
-            background-size: cover;
-            background-position: center;
         }
         #section-3 h2, #section-3 ul {
             background-color: rgba(0, 0, 0, 0.5);
