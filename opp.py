@@ -28,7 +28,7 @@ st.markdown("---") # 구분선
 
 # 2. 프론트엔드와 백엔드란?
 st.header("2. 프론트엔드와 백엔드란?")
-st.image(Image.open("image_4.jpg"), use_column_width=True) # 파일 이름 변경: 그림_4.jpg -> image_4.jpg
+st.image(Image.open("image_4.png"), use_column_width=True) # 파일 이름 변경: 그림_4.jpg -> image_4.jpg
 st.markdown("""
 웹 개발은 크게 두 가지 영역으로 나뉩니다.
 
@@ -40,7 +40,7 @@ st.markdown("---") # 구분선
 
 # 3. 웹 페이지 개발에서 인공지능의 역할
 st.header("3. 웹 페이지 개발에서 인공지능의 역할")
-st.image(Image.open("image_7.jpg"), use_column_width=True) # 파일 이름 변경: 그림_7.jpg -> image_7.jpg
+st.image(Image.open("image_7.png"), use_column_width=True) # 파일 이름 변경: 그림_7.jpg -> image_7.jpg
 st.markdown("""
 인공지능(AI)은 웹 페이지 개발의 다양한 영역에서 활용되고 있습니다.
 
